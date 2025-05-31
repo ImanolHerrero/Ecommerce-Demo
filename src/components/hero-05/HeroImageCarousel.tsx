@@ -23,7 +23,6 @@ export function HeroImageCarousel({ images }: { images: any[] }) {
 
   return (
     <div className="relative w-full flex flex-col items-center">
-      {/* Imagen */}
       <Image
         src={urlFor(images[index]).url()}
         alt={`Hero image ${index + 1}`}
@@ -33,7 +32,6 @@ export function HeroImageCarousel({ images }: { images: any[] }) {
         priority
       />
 
-      {/* Flechas */}
       <button
         onClick={prev}
         className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-lg hover:bg-white"
@@ -50,7 +48,6 @@ export function HeroImageCarousel({ images }: { images: any[] }) {
         <ChevronRight className="w-6 h-6 text-primary" />
       </button>
 
-      {/* Indicadores dots */}
       <div className="flex gap-2 mt-4">
         {images.map((_, i) => (
           <button
