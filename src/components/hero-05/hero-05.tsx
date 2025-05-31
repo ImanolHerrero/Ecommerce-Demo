@@ -21,7 +21,7 @@ export default async function Hero05() {
       <div className="w-full mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <Badge className="rounded-full py-1 border-none">
-            Nuevos ingresos!!
+            Temporada invierno 2025
           </Badge>
           <h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-5xl font-bold !leading-[1.2] tracking-tight">
             La mejor ropa de Argentina
