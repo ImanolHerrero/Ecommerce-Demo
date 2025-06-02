@@ -1,4 +1,4 @@
-import Newest from "@/src/components/Newest";
+import Newest from "@/src/components/Newest/Newest";
 import Hero05 from "@/src/components/hero-05/hero-05";
 
 export default async function IndexPage() {

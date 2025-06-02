@@ -26,15 +26,15 @@ export function HeroImageCarousel({ images }: { images: any[] }) {
       <Image
         src={urlFor(images[index]).url()}
         alt={`Hero image ${index + 1}`}
-        className="object-cover w-full h-auto max-h-[600px] rounded-lg transition-opacity duration-500"
+        className="object-cover w-full lg:h-auto h-[350px] max-h-[600px] rounded-md transition-opacity duration-500"
         width={500}
         height={500}
-        priority
+        priority={true}
       />
 
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-lg hover:bg-white"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70  p-2 shadow-lg hover:bg-white"
         aria-label="Anterior"
       >
         <ChevronLeft className="w-6 h-6 text-primary" />
@@ -42,7 +42,7 @@ export function HeroImageCarousel({ images }: { images: any[] }) {
 
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow-lg hover:bg-white"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70  p-2 shadow-lg hover:bg-white"
         aria-label="Siguiente"
       >
         <ChevronRight className="w-6 h-6 text-primary" />
